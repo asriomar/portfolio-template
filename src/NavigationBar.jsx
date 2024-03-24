@@ -1,27 +1,112 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const NavigationBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="bg-blue-900 text-white py-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-xl font-bold">Your Name</div>
-        <ul className="flex space-x-4">
-          <li>
-            <a href="#about" className="hover:text-blue-500">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" className="hover:text-blue-500">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-blue-500">
-              Contact
-            </a>
-          </li>
-        </ul>
+    <nav className="bg-blue-800 py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between">
+          <div className="flex items-center">
+            <div className="flex-shrink-0">
+              <a href="#" className="text-white font-semibold text-xl">
+                YourLogo
+              </a>
+            </div>
+            <div className="hidden md:block">
+              <a href="#" className="ml-10 text-white hover:text-gray-300">
+                Home
+              </a>
+              <a href="#" className="ml-4 text-white hover:text-gray-300">
+                About
+              </a>
+              <a href="#" className="ml-4 text-white hover:text-gray-300">
+                Services
+              </a>
+              <a href="#" className="ml-4 text-white hover:text-gray-300">
+                Contact
+              </a>
+            </div>
+          </div>
+          <div className="-mr-2 flex md:hidden">
+            <button
+              onClick={toggleMenu}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                className={`${isOpen ? 'block' : 'hidden'} h-6 w-6`}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`${isOpen ? 'block' : 'hidden'} md:hidden`}
+        id="mobile-menu"
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#"
+            className="text-white block hover:bg-gray-700 py-2 px-3 rounded-md text-base font-medium"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="text-white block hover:bg-gray-700 py-2 px-3 rounded-md text-base font-medium"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="text-white block hover:bg-gray-700 py-2 px-3 rounded-md text-base font-medium"
+          >
+            Services
+          </a>
+          <a
+            href="#"
+            className="text-white block hover:bg-gray-700 py-2 px-3 rounded-md text-base font-medium"
+          >
+            Contact
+          </a>
+        </div>
       </div>
     </nav>
   );
