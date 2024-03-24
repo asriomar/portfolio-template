@@ -8,7 +8,7 @@ const SocialMediaSection = () => {
         <h2 className="text-3xl font-bold mb-8 text-center">Connect with Me</h2>
         <div className="flex justify-center space-x-8">
           <a
-            href="https://www.linkedin.com/in/your_profile"
+            href="https://www.linkedin.com/in/mohd-asri-13044a188"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 transition duration-300 ease-in-out"
@@ -16,7 +16,7 @@ const SocialMediaSection = () => {
             <FaLinkedin className="text-4xl" />
           </a>
           <a
-            href="https://www.facebook.com/your_profile"
+            href="https://www.facebook.com/mohdasri.omar"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 transition duration-300 ease-in-out"
@@ -24,7 +24,7 @@ const SocialMediaSection = () => {
             <FaFacebook className="text-4xl" />
           </a>
           <a
-            href="https://github.com/your_username"
+            href="https://github.com/asriomar"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 hover:text-gray-900 transition duration-300 ease-in-out"
