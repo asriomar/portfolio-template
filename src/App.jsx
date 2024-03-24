@@ -3,6 +3,7 @@ import TestimonialCarousel from './Testimonials';
 import NavigationBar from './NavigationBar';
 import SkillsSection from './SkillsSection';
 import SocialMediaSection from './SocialMediaSection';
+import GetInTouch from './GetInTouch';
 
 const PortfolioWebsite = () => {
   return (
@@ -35,42 +36,33 @@ const PortfolioWebsite = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section className="py-8">
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
           <p className="text-lg">
-            Hello! I'm [Your Name], a dedicated front-end developer with a
-            passion for creating exceptional web experiences. With [X] years of
-            industry experience, I specialize in transforming ideas into
-            visually stunning and user-friendly websites using cutting-edge
+            Hey! I'm [Your Name], a front-end developer passionate about
+            crafting exceptional web experiences. With years of experience, I
+            specialize in creating visually stunning websites using cutting-edge
             technologies.
             <br />
             <br />
-            My journey in web development began [X years ago] when I discovered
-            my love for coding. Since then, I've honed my skills in HTML, CSS,
-            JavaScript, and various front-end frameworks like React.js. I'm
-            committed to continuous learning and staying updated with the latest
-            industry trends and advancements.
+            My coding journey started years ago. Since then, I've mastered HTML,
+            CSS, JavaScript, and frameworks like React.js. I'm committed to
+            learning and staying updated with industry trends.
             <br />
             <br />
-            I approach development with a blend of creativity and precision. I
-            thrive on solving complex problems with innovative solutions and
-            meticulously refining every aspect of my work to deliver an
-            outstanding user experience. Whether it's crafting responsive
-            layouts, optimizing performance, or debugging code, I strive for
-            excellence in every project.
+            I bring creativity and precision to every project, solving complex
+            problems with innovative solutions. Whether crafting layouts,
+            optimizing performance, or debugging code, I aim for excellence.
             <br />
             <br />
-            Outside of coding, I enjoy exploring the latest design trends,
-            experimenting with new coding techniques, and indulging in a good
-            cup of coffee while immersing myself in a captivating book on
-            technology or design. I thrive in collaborative environments and am
-            always excited to collaborate with like-minded individuals on
-            exciting projects.
+            Beyond coding, I enjoy exploring design trends, trying new
+            techniques, and savoring coffee with a captivating tech or design
+            book. I thrive in collaborative environments and look forward to
+            working with like-minded individuals.
             <br />
             <br />
-            Let's connect and create something remarkable together!
+            Let's connect and create something remarkable!
           </p>
         </div>
       </section>
@@ -146,7 +138,7 @@ const PortfolioWebsite = () => {
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Project Title 3</h3>
+                <h3 className="text-xl font-bold mb-2">Project Title 4</h3>
                 <p className="text-gray-700 mb-4">
                   Brief project description goes here...
                 </p>
@@ -164,7 +156,7 @@ const PortfolioWebsite = () => {
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Project Title 3</h3>
+                <h3 className="text-xl font-bold mb-2">Project Title 5</h3>
                 <p className="text-gray-700 mb-4">
                   Brief project description goes here...
                 </p>
@@ -182,7 +174,7 @@ const PortfolioWebsite = () => {
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Project Title 3</h3>
+                <h3 className="text-xl font-bold mb-2">Project Title 6</h3>
                 <p className="text-gray-700 mb-4">
                   Brief project description goes here...
                 </p>
@@ -200,7 +192,7 @@ const PortfolioWebsite = () => {
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Project Title 3</h3>
+                <h3 className="text-xl font-bold mb-2">Project Title 7</h3>
                 <p className="text-gray-700 mb-4">
                   Brief project description goes here...
                 </p>
@@ -223,68 +215,13 @@ const PortfolioWebsite = () => {
           <h2 className="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
 
           {/* Contact Form */}
-          <form className="max-w-lg mx-auto">
-            <div className="mb-4">
-              <label
-                htmlFor="name"
-                className="block text-gray-700 font-semibold mb-2"
-              >
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full border-2 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                htmlFor="email"
-                className="block text-gray-700 font-semibold mb-2"
-              >
-                Your Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full border-2 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                htmlFor="message"
-                className="block text-gray-700 font-semibold mb-2"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                className="w-full border-2 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
-                rows="4"
-                placeholder="Your message"
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300"
-            >
-              Send Message
-            </button>
-          </form>
+          <GetInTouch />
 
           {/* Contact Information */}
           <div className="mt-8 text-center">
             <p className="text-lg font-semibold">Contact Information</p>
             <p className="text-gray-700">
-              Feel free to reach out via email or phone.
+              Also feel free to reach out via email.
             </p>
             <p className="text-gray-700">
               Email:{' '}
@@ -292,11 +229,8 @@ const PortfolioWebsite = () => {
                 href="mailto:youremail@example.com"
                 className="text-blue-500 hover:underline"
               >
-                youremail@example.com
+                mohdasriomar84@gmail.com
               </a>
-            </p>
-            <p className="text-gray-700">
-              Phone: <span className="text-blue-500">+1234567890</span>
             </p>
           </div>
         </div>
@@ -308,7 +242,7 @@ const PortfolioWebsite = () => {
       <footer className="bg-gray-900 text-white py-4">
         <div className="container mx-auto text-center">
           <p>
-            &copy; {new Date().getFullYear()} Your Name. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Mohd Asri. All Rights Reserved.
           </p>
         </div>
       </footer>

@@ -24,7 +24,7 @@ const SkillsSection = () => {
     { name: 'Webpack', icon: <FaCode /> },
     { name: 'UI/UX Design Principles', icon: <FaCode /> },
     { name: 'Next.js', icon: <FaCheck /> },
-    { name: 'TypeScript', icon: <FaCheck /> },
+
     // Add more skills as needed
   ];
 
